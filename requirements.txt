@@ -1,0 +1,11 @@
+# DC Roommate Slang Bridge - Dependencies
+# 100% Local-first, zero cloud dependencies
+
+fastapi>=0.115.0
+uvicorn>=0.30.0
+pydantic>=2.9.0
+requests>=2.28.0
+streamlit>=1.35.0
+ollama>=0.3.0
+python-multipart>=0.0.9
+pytest>=8.0.0

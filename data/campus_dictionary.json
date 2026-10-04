@@ -1,0 +1,405 @@
+{
+  "campus_info": {
+    "campus_name": "Infosys Development Centre (DC) Mysore",
+    "campus_nickname": "DC Mysore / The Paradise Campus",
+    "location": "Hebbal Electronic City, Mysuru, Karnataka, India",
+    "size_acres": 337,
+    "context": "The premier training academy and global development centre for Infosys freshers (system engineers, trainees). Roommates from diverse Indian states (North, South, East, West) live together in Employee Care Centres (ECCs), leading to a vibrant blend of regional slang, hostel banter, and campus-specific vocabulary."
+  },
+  "categories": [
+    {
+      "id": "campus_landmarks",
+      "name": "Campus Landmarks & Spots",
+      "description": "Iconic locations, buildings, and food courts at Infosys Mysore DC."
+    },
+    {
+      "id": "training_academics",
+      "name": "Training & Academics (FP & FA)",
+      "description": "Foundation Program, exams, cutoff panic, and educator terminology."
+    },
+    {
+      "id": "hostel_living",
+      "name": "Hostel (ECC) & Roommate Life",
+      "description": "Everyday survival in Employee Care Centre rooms, cycles, laundry, and night canteens."
+    },
+    {
+      "id": "regional_slang_kannada",
+      "name": "Karnataka / Local Mysore Slang",
+      "description": "Kannada terms essential for navigating campus life and local interactions."
+    },
+    {
+      "id": "regional_slang_malayalam",
+      "name": "Mallu / Kerala Roommate Slang",
+      "description": "Malayalam slang commonly heard across GEC corridors and ECC blocks."
+    },
+    {
+      "id": "regional_slang_tamil",
+      "name": "Tamil Roommate Slang",
+      "description": "Tamil expressions frequently traded during lab sessions and mess runs."
+    },
+    {
+      "id": "regional_slang_telugu",
+      "name": "Telugu Roommate Slang",
+      "description": "Telugu banter popular in hostel rooms and late-night study marathons."
+    },
+    {
+      "id": "regional_slang_hindi",
+      "name": "Desi / Hindi Roommate Banter",
+      "description": "Hindi & Hinglish expressions ubiquitous in group studies and hostel wings."
+    }
+  ],
+  "terms": [
+    {
+      "term": "JC",
+      "aliases": ["JC Food Court", "J.C. Bose", "JC Multiplex"],
+      "category": "campus_landmarks",
+      "languages": ["Campus Lingo", "English"],
+      "meaning": "The vibrant central multiplex and entertainment/dining hub named after Sir Jagadish Chandra Bose.",
+      "vibe": "Relaxed, celebratory, social, evening hangout spot.",
+      "campus_context": "Houses a 3-screen movie theatre (screening weekend movies for trainees), bowling alley, gymnasium, and diverse food counters. Roommates meet at JC after grueling 8-hour lab days to grab butter masala dosa, juice, or coffee.",
+      "example_usage": "FA khatam ho gaya bhai, seedha JC chal ke movie dekhenge aur dosa dabayenge!",
+      "keywords": ["jc", "food court", "multiplex", "bowling", "movie"]
+    },
+    {
+      "term": "GEC 1 & GEC 2",
+      "aliases": ["GEC", "GEC-1", "GEC-2", "Global Education Centre", "The White House", "Parthenon"],
+      "category": "campus_landmarks",
+      "languages": ["Campus Lingo", "English"],
+      "meaning": "Global Education Centre buildings; GEC 1 is the colossal neoclassical structure with Grecian/Roman pillars, and GEC 2 is the modern tech wing.",
+      "vibe": "High intensity, awe-inspiring, formal, academic pressure.",
+      "campus_context": "The heart of academic training. Thousands of trainees attend coding batches and assessments here. Everyone sprints across GEC lawns at 9:14 AM to punch biometric attendance before 9:15 AM in formal shoes.",
+      "example_usage": "Macha run fast, GEC 1 biometric punch time is 9:14 AM, educator will mark absent!",
+      "keywords": ["gec", "gec 1", "gec 2", "global education centre", "pillars", "biometric"]
+    },
+    {
+      "term": "ECC",
+      "aliases": ["ECC Hostel", "Employee Care Centre", "Hostel Block"],
+      "category": "hostel_living",
+      "languages": ["Campus Lingo", "English"],
+      "meaning": "Employee Care Centre — the residential accommodation blocks where trainees lodge.",
+      "vibe": "Cozy, chaotic roommate bonding, post-study fatigue, banter central.",
+      "campus_context": "Numbered blocks (ECC 1 to ECC 90+) spread across the lush campus. Twin-sharing rooms where trainees from different cultures learn to live together, share cupboards, battle for AC remote dominance, and host midnight group study sessions.",
+      "example_usage": "ECC 42 room number mein aaja, FA3 ka mock test solve kar rahe hain.",
+      "keywords": ["ecc", "hostel", "room", "accommodation", "employee care centre"]
+    },
+    {
+      "term": "FP",
+      "aliases": ["Foundation Program"],
+      "category": "training_academics",
+      "languages": ["Campus Lingo", "English"],
+      "meaning": "Foundation Program — the rigorous multi-month technical and soft-skills boot camp for Infosys fresh hires.",
+      "vibe": "Strenuous, transformative, do-or-die academic rigor.",
+      "campus_context": "Covers generic programming concepts (Python, Java, OOPs, DBMS) and specialized streams. Success or failure in FP dictates your career posting and project allocation.",
+      "example_usage": "FP is no joke boss, 4 months of pure non-stop code, tests, and presentations.",
+      "keywords": ["fp", "foundation program", "training", "fresher"]
+    },
+    {
+      "term": "FA",
+      "aliases": ["Focus Assessment", "Foundation Assessment", "FA1", "FA2", "FA3"],
+      "category": "training_academics",
+      "languages": ["Campus Lingo", "English"],
+      "meaning": "Focus Assessments / Foundation Assessments — the high-stakes periodic exams during the training program.",
+      "vibe": "Nerve-wracking, high anxiety, caffeinated all-nighters.",
+      "campus_context": "Passing threshold is strictly 65% aggregate. Missing the cutoff triggers the dreaded Re-FA. During FA weeks, the whole campus goes into silent bunker mode, and night canteens run out of Maggi.",
+      "example_usage": "FA2 results out tomorrow, praying for 65%+ or else weekend plan cancelled.",
+      "keywords": ["fa", "fa1", "fa2", "fa3", "focus assessment", "assessment", "exam"]
+    },
+    {
+      "term": "Re-FA",
+      "aliases": ["Re-assessment", "Retake FA"],
+      "category": "training_academics",
+      "languages": ["Campus Lingo", "English"],
+      "meaning": "Retake Focus Assessment — a second and final opportunity provided to trainees who scored below 65% in their regular FA.",
+      "vibe": "Peak panic, existential career dread, ultimate midnight crunch.",
+      "campus_context": "If a trainee fails Re-FA, their employment contract is evaluated or terminated. Roommates rally together to tutor anyone stuck in Re-FA mode.",
+      "example_usage": "Aliya got 58 in Java FA, now we have to sit together every night until Re-FA is cleared.",
+      "keywords": ["re-fa", "refa", "reassessment", "retake"]
+    },
+    {
+      "term": "Campus Cycle / Green Cycle",
+      "aliases": ["Cycle", "DC Cycle", "Atlas Cycle", "Green Bicycle"],
+      "category": "hostel_living",
+      "languages": ["Campus Lingo", "English"],
+      "meaning": "The thousands of shared campus bicycles provided by Infosys for commuting across the 337-acre premises.",
+      "vibe": "Frantic morning treasure hunt, friendly unintentional theft, communal convenience.",
+      "campus_context": "You park your cycle outside GEC, attend class, and come out at 5:30 PM to find someone else rode it to JC! Finding an unlocked cycle in the morning near ECC is considered the ultimate stroke of luck.",
+      "example_usage": "Who took my green cycle from ECC-23 stand? Now I have to walk 2 km in formals!",
+      "keywords": ["cycle", "green cycle", "bicycle", "cycle stand", "transport"]
+    },
+    {
+      "term": "Fiesta & Oasis",
+      "aliases": ["Fiesta", "Oasis", "Fiesta Food Court", "Oasis Mess"],
+      "category": "campus_landmarks",
+      "languages": ["Campus Lingo", "English"],
+      "meaning": "The two massive primary food courts on campus serving diverse North, South, and specialty cuisines.",
+      "vibe": "Bustling, aromatic, lively debate on which counter serves better butter chicken or parotta.",
+      "campus_context": "Located strategically between academic blocks and hostels. Oasis is renowned for its Malabar parottas and fruit juices, while Fiesta is the go-to for hearty North Indian thalis and dosa counters.",
+      "example_usage": "Lunch at Oasis today? I need that Kerala parotta and cold coffee to survive the afternoon lab.",
+      "keywords": ["fiesta", "oasis", "food court", "mess", "parotta", "thali"]
+    },
+    {
+      "term": "Floating Restaurant",
+      "aliases": ["Floating Mess", "Lake Restaurant"],
+      "category": "campus_landmarks",
+      "languages": ["Campus Lingo", "English"],
+      "meaning": "The picturesque dining pavilion situated beside the campus water reservoir and fountains.",
+      "vibe": "Aesthetic, romantic, breezy evening leisure.",
+      "campus_context": "Trainees visit here for evening snacks, sandwiches, and aesthetic photos to post on Instagram with the caption 'Yes, this is an office campus!'.",
+      "example_usage": "Let's grab evening tea at the Floating Restaurant before starting the algorithms assignment.",
+      "keywords": ["floating restaurant", "lake", "view", "fountain"]
+    },
+    {
+      "term": "Biometric Punch / 9:15",
+      "aliases": ["9:15 Punch", "Swipe", "Attendance Punch"],
+      "category": "training_academics",
+      "languages": ["Campus Lingo", "English"],
+      "meaning": "The strict automated biometric fingerprint entry cutoff at 9:15 AM across GEC gates.",
+      "vibe": "Heart-pounding urgency, frantic sprint.",
+      "campus_context": "At 9:12 AM, hundreds of trainees can be seen sprinting across the heritage lawns in ties, tucked shirts, and black formal shoes. A delay past 9:15 AM counts as half-day leave.",
+      "example_usage": "Stop talking and cycle faster, it's 9:11 AM, biometric punch closes in 4 minutes!",
+      "keywords": ["punch", "biometric", "9:15", "attendance", "swipe"]
+    },
+    {
+      "term": "Macha",
+      "aliases": ["Machey", "Macha"],
+      "category": "regional_slang_kannada",
+      "languages": ["Kannada", "Campus Lingua Franca"],
+      "meaning": "Literally brother-in-law, universally used across South India and Mysore DC as 'Bro', 'Dude', or 'Mate'.",
+      "vibe": "Warm, fraternal, default prefix for any conversation.",
+      "campus_context": "Regardless of whether a trainee is from Delhi or Cochin, within 2 weeks at Mysore DC, they start calling their roommate 'Macha'.",
+      "example_usage": "Macha, please sign my laundry slip if you head to the token counter.",
+      "keywords": ["macha", "bro", "dude", "friend", "kannada"]
+    },
+    {
+      "term": "Swalpa Adjust Maadi",
+      "aliases": ["Adjust Maadi", "Swalpa Adjust"],
+      "category": "regional_slang_kannada",
+      "languages": ["Kannada"],
+      "meaning": "'Please adjust a little bit' — Karnataka's golden rule of mutual accommodation and compromise.",
+      "vibe": "Gentle persuasion, diplomatic roommate negotiation, conflict resolution.",
+      "campus_context": "Essential phrase when negotiating hostel AC thermostat settings (24°C vs 18°C), borrowing a formal tie on Monday morning, or asking for shelf space in the ECC wardrobe.",
+      "example_usage": "Roommate wants AC at 18 degrees, I told him 'Swalpa adjust maadi guru, 23 pe rakho'.",
+      "keywords": ["swalpa adjust maadi", "adjust", "kannada", "compromise"]
+    },
+    {
+      "term": "Guru",
+      "aliases": ["En Guru"],
+      "category": "regional_slang_kannada",
+      "languages": ["Kannada"],
+      "meaning": "Literally 'Teacher' or 'Mentor', colloquially used as 'Boss', 'Chief', or 'My man'.",
+      "vibe": "Casual respect, camaraderie, expressive greeting.",
+      "campus_context": "Used to address batchmates or hostel mates when seeking an update or sharing campus gossip.",
+      "example_usage": "En guru, today's Python lab assignment finished or still getting recursion error?",
+      "keywords": ["guru", "boss", "chief", "kannada"]
+    },
+    {
+      "term": "Bombaat",
+      "aliases": ["Bombaat aagide"],
+      "category": "regional_slang_kannada",
+      "languages": ["Kannada"],
+      "meaning": "Superb, fantastic, first-class, mind-blowing.",
+      "vibe": "Delight, high approval, enthusiastic satisfaction.",
+      "campus_context": "Heard frequently when describing the special weekend biryani at Fiesta or when someone nails a mock assessment with 95%.",
+      "example_usage": "The weekend movie at JC multiplex was bombaat!",
+      "keywords": ["bombaat", "superb", "awesome", "kannada"]
+    },
+    {
+      "term": "Scene Contra",
+      "aliases": ["Contra Scene", "Scene Contra Aayi"],
+      "category": "regional_slang_malayalam",
+      "languages": ["Malayalam", "Campus Lingo"],
+      "meaning": "A situation has gone unexpectedly and disastrously wrong; chaos or a complete plot twist.",
+      "vibe": "Shock, humorous catastrophe, panic.",
+      "campus_context": "Used when the educator announces an unannounced surprise test, or when a trainee accidentally compiles buggy code 30 seconds before submission.",
+      "example_usage": "Educator looked at my database schema and frowned... total scene contra aliya!",
+      "keywords": ["scene contra", "contra", "malayalam", "trouble", "disaster"]
+    },
+    {
+      "term": "Pani Paali",
+      "aliases": ["Panipaali"],
+      "category": "regional_slang_malayalam",
+      "languages": ["Malayalam"],
+      "meaning": "The plan failed miserably, or we are completely caught/screwed.",
+      "vibe": "Resignation to impending doom, self-deprecating humor.",
+      "campus_context": "Invoked when you thought the FA had multiple choice questions, but it turned out to be 4 complex live-coding problems.",
+      "example_usage": "Thought Java stream API wouldn't come in FA2, pani paali big time.",
+      "keywords": ["pani paali", "failed", "malayalam", "screwed"]
+    },
+    {
+      "term": "Aliya",
+      "aliases": ["Aliyaaa"],
+      "category": "regional_slang_malayalam",
+      "languages": ["Malayalam"],
+      "meaning": "Literally 'brother-in-law', used as the ultimate affectionate term for a close friend or roommate.",
+      "vibe": "Heartfelt brotherhood, teasing camaraderie.",
+      "campus_context": "Kerala batchmates use it continuously, and within weeks non-Malayali roommates use 'Aliya' to ask for notes or midnight chai.",
+      "example_usage": "Aliya, wake up! It's 8:30 AM, shower queue in ECC is already 4 people long.",
+      "keywords": ["aliya", "bro", "roommate", "malayalam"]
+    },
+    {
+      "term": "Set Aayi",
+      "aliases": ["Set Aayikkanu", "Set Aayi"],
+      "category": "regional_slang_malayalam",
+      "languages": ["Malayalam"],
+      "meaning": "Everything is sorted, arranged, or resolved successfully.",
+      "vibe": "Relief, satisfaction, mission accomplished.",
+      "campus_context": "Used when someone successfully debugs their program, books a Mysore-to-Bangalore train ticket for the weekend, or finds a working campus cycle.",
+      "example_usage": "Got the cycle and punched in at 9:13 AM, set aayi!",
+      "keywords": ["set aayi", "sorted", "fixed", "malayalam"]
+    },
+    {
+      "term": "Machi / Thala",
+      "aliases": ["Machi", "Thalaiva", "Thala"],
+      "category": "regional_slang_tamil",
+      "languages": ["Tamil"],
+      "meaning": "'Machi' means buddy/pal; 'Thala' means boss/leader/chief.",
+      "vibe": "High loyalty, high energy, respectful banter.",
+      "campus_context": "Used constantly by Tamil Nadu trainees in GEC labs when assisting each other with code syntax or planning weekend Mysore Palace visits.",
+      "example_usage": "Thala, help me fix this NullPointerException before the educator inspects our screens!",
+      "keywords": ["machi", "thala", "buddy", "tamil"]
+    },
+    {
+      "term": "Gaandu",
+      "aliases": ["Semma Gaandu"],
+      "category": "regional_slang_tamil",
+      "languages": ["Tamil"],
+      "meaning": "Intensely irritated, pissed off, or thoroughly annoyed.",
+      "vibe": "Simmering anger, exasperation.",
+      "campus_context": "Exclaimed when code fails only on test case 4, or when someone borrows your hostel room key without telling you.",
+      "example_usage": "Educator made us rewrite the whole ER diagram, semma gaandu machi!",
+      "keywords": ["gaandu", "annoyed", "irritated", "tamil"]
+    },
+    {
+      "term": "Vera Level",
+      "aliases": ["Vera Level Da"],
+      "category": "regional_slang_tamil",
+      "languages": ["Tamil"],
+      "meaning": "Next level, extraordinary, unmatched greatness.",
+      "vibe": "Awe, hype, celebration.",
+      "campus_context": "Used to describe cultural night performances at the Amphitheatre or the campus bowling alley amenities.",
+      "example_usage": "The DJ night at the amphitheatre was vera level!",
+      "keywords": ["vera level", "next level", "tamil", "awesome"]
+    },
+    {
+      "term": "Mama / Babu",
+      "aliases": ["Mama", "Babu garu"],
+      "category": "regional_slang_telugu",
+      "languages": ["Telugu"],
+      "meaning": "'Mama' literally maternal uncle, used as close buddy/dude; 'Babu' means friend/pal.",
+      "vibe": "Affectionate, boisterous, conversational glue.",
+      "campus_context": "The standard Telugu salutation across ECC hostel corridors when heading out for evening snacks or tea.",
+      "example_usage": "Mama, Oasis lo dosalu thindama, I am starving after 6 hours of SQL queries.",
+      "keywords": ["mama", "babu", "dude", "telugu"]
+    },
+    {
+      "term": "Doola Theerindi",
+      "aliases": ["Doola Theeripoyindi"],
+      "category": "regional_slang_telugu",
+      "languages": ["Telugu"],
+      "meaning": "Got taught a hard lesson; pride shattered; had one's overconfidence thoroughly disciplined.",
+      "vibe": "Humbling realization, ironic pain.",
+      "campus_context": "Said when someone bragged that they wouldn't study for FA because it's 'easy basic coding', and then barely scraped 66%.",
+      "example_usage": "He skipped mock tests to play snooker at JC, FA lo doola theerindi.",
+      "keywords": ["doola theerindi", "lesson learned", "telugu", "disciplined"]
+    },
+    {
+      "term": "Dhimak Kharab",
+      "aliases": ["Dhimak Kharab Ayyindi"],
+      "category": "regional_slang_telugu",
+      "languages": ["Telugu", "Hyderabadi"],
+      "meaning": "My brain is fried / going crazy from overload.",
+      "vibe": "Mental exhaustion, cognitive saturation, humorous despair.",
+      "campus_context": "Uttered after 4 continuous hours of debugging multi-threaded Java applications in the GEC basement labs.",
+      "example_usage": "Too many Spring Boot annotations mama, dhimak kharab ho gaya.",
+      "keywords": ["dhimak kharab", "brain fried", "exhausted", "telugu"]
+    },
+    {
+      "term": "Scene Sorted Hai",
+      "aliases": ["Scene Sorted", "Sorted"],
+      "category": "regional_slang_hindi",
+      "languages": ["Hindi", "Hinglish"],
+      "meaning": "Everything is completely under control, resolved, and hassle-free.",
+      "vibe": "Relaxed confidence, peaceful reassurance.",
+      "campus_context": "Said when all team members submitted their project code, got the educator's sign-off, and have a free weekend ahead.",
+      "example_usage": "Educator approved our capstone project, Saturday-Sunday scene sorted hai bhai!",
+      "keywords": ["scene sorted", "sorted", "hindi", "hinglish", "chill"]
+    },
+    {
+      "term": "Kat Gaya",
+      "aliases": ["Kaat Diya", "Bura Kata"],
+      "category": "regional_slang_hindi",
+      "languages": ["Hindi", "Hinglish"],
+      "meaning": "Got conned, tricked, blindsided, or suffered an unexpected loss.",
+      "vibe": "Tragicomedy, collective sympathy, grievance.",
+      "campus_context": "Used when an educator promised 'only conceptual questions' and gave 5 algorithmic puzzles, or when you walked 15 minutes to Oasis only to find your favorite stall closed.",
+      "example_usage": "Told us mock test marks would be considered, but only real FA counted... kat gaya!",
+      "keywords": ["kat gaya", "scammed", "tricked", "hindi"]
+    },
+    {
+      "term": "Funda",
+      "aliases": ["Fundas", "Funda Clear"],
+      "category": "regional_slang_hindi",
+      "languages": ["Hindi", "Campus Lingo"],
+      "meaning": "Core underlying concept or foundational logic.",
+      "vibe": "Intellectual clarity, engineering focus.",
+      "campus_context": "Used constantly during peer study sessions in ECC rooms. 'Funda clear hai toh code ho jayega'.",
+      "example_usage": "Bhai, recursion ka funda explain kar de, tomorrow morning is the lab exam.",
+      "keywords": ["funda", "concept", "logic", "hindi"]
+    },
+    {
+      "term": "Phod Diya",
+      "aliases": ["Phod Ke Aaye"],
+      "category": "regional_slang_hindi",
+      "languages": ["Hindi"],
+      "meaning": "Smashed it, aced it, performed extraordinarily well.",
+      "vibe": "Victorious, exuberant celebration.",
+      "campus_context": "Trainees shouting this while walking out of GEC 1 exam halls after scoring 90%+ in FA.",
+      "example_usage": "FA1 mein 92 marks! Phod diya bhai, party tonight at JC!",
+      "keywords": ["phod diya", "aced", "victory", "hindi"]
+    },
+    {
+      "term": "Night Canteen Maggi",
+      "aliases": ["Night Canteen", "Midnight Maggi", "ECC Canteen"],
+      "category": "hostel_living",
+      "languages": ["Campus Lingo", "English"],
+      "meaning": "Late night canteen service operating near hostel blocks during exam seasons serving hot Maggi, bun omelettes, and tea.",
+      "vibe": "Comforting, fuel for survival, nostalgic hostel solidarity.",
+      "campus_context": "At 1:30 AM, trainees take a 15-minute break from solving algorithmic problems to replenish energy with steaming double-masala Maggi and chai.",
+      "example_usage": "Drop the IDE for 10 minutes, let's sprint to night canteen for hot Maggi and cold coffee.",
+      "keywords": ["night canteen", "maggi", "midnight", "hostel food"]
+    },
+    {
+      "term": "Formals & Ties",
+      "aliases": ["Formals", "Dress Code", "Monday to Thursday Formals"],
+      "category": "training_academics",
+      "languages": ["Campus Lingo", "English"],
+      "meaning": "The mandatory corporate formal dress code enforced across academic zones Monday through Thursday.",
+      "vibe": "Stiff, sweaty, humorous corporate cosplay.",
+      "campus_context": "Ironed shirts, formal trousers, ties, leather shoes, and lanyard-wearing ID cards. Security guards and educators check dress compliance at GEC gates.",
+      "example_usage": "Forgot to iron my Monday shirt, roommate give me your tie, dress code inspector is standing at GEC gate!",
+      "keywords": ["formals", "dress code", "tie", "monday", "lanyard"]
+    },
+    {
+      "term": "Laundry Token",
+      "aliases": ["Token", "ECC Laundry", "Washing Machine Token"],
+      "category": "hostel_living",
+      "languages": ["Campus Lingo", "English"],
+      "meaning": "The physical brass tokens or coins purchased to operate the automated laundromat machines in ECC buildings.",
+      "vibe": "Resource scarcity, strategic planning, roommate cooperation.",
+      "campus_context": "On Sunday mornings, queues for washing machines form at 7:00 AM. Trainees trade laundry tokens like gold bullion.",
+      "example_usage": "Do you have 2 spare laundry tokens? The token counter at reception is closed today.",
+      "keywords": ["laundry", "token", "washing machine", "hostel"]
+    },
+    {
+      "term": "Multiplex Movie Weekend",
+      "aliases": ["Multiplex Screening", "Free Movie"],
+      "category": "campus_landmarks",
+      "languages": ["Campus Lingo", "English"],
+      "meaning": "Complimentary weekend movie screenings at the 3-screen JC multiplex exclusively for campus residents and trainees.",
+      "vibe": "Pure bliss, weekend celebration, recharge.",
+      "campus_context": "Friday evening tickets open on the internal portal, seats fill up within 90 seconds. A rite of passage after surviving a tough week of training.",
+      "example_usage": "Got 2 tickets for the 6 PM multiplex show at JC, FA stress gone!",
+      "keywords": ["multiplex", "movie", "weekend", "cinema"]
+    }
+  ]
+}
