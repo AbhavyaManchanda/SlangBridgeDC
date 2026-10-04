@@ -135,16 +135,46 @@ class OllamaService:
                 parsed = self._extract_json(content)
 
                 if parsed and "direct_meaning" in parsed and "vibe_and_tone" in parsed:
+                    direct_meaning = parsed.get("direct_meaning", "").strip()
+                    vibe_and_tone = parsed.get("vibe_and_tone", "").strip()
+                    on_campus_context = parsed.get("on_campus_context", "").strip()
+                    cultural_nuances = parsed.get("cultural_nuances", [])
+                    reply_suggestion = parsed.get("roommate_reply_suggestion")
+                    model_label = f"ollama:{resolved_model}"
+
+                    # Clean Markdown formatting without HTML div tags
+                    terms_badges = " ".join([f"`{t}`" for t in term_names]) if term_names else "`Conversational Campus Lingo`"
+                    nuances_md = "\n".join([f"- {item}" for item in cultural_nuances]) if cultural_nuances else "- Authentic campus cross-cultural dialogue"
+                    reply_md = f"#### 💬 Suggested Roommate Response\n> *\"{reply_suggestion}\"*\n\n" if reply_suggestion else ""
+
+                    formatted_markdown = (
+                        f"### 📘 Direct Meaning / Translation\n"
+                        f"> {direct_meaning}\n\n"
+                        f"### 🎭 The Vibe & Tone\n"
+                        f"**{vibe_and_tone}**\n\n"
+                        f"### 🏛️ On-Campus Context (JC, GEC, or Hostel Life)\n"
+                        f"{on_campus_context}\n\n"
+                        f"---\n\n"
+                        f"{reply_md}"
+                        f"#### 🌐 Cultural & Linguistic Nuances\n"
+                        f"{nuances_md}\n\n"
+                        f"#### 🏷️ Detected Campus Terms\n"
+                        f"{terms_badges}\n\n"
+                        f"---\n"
+                        f"*⚙️ **Engine:** {model_label}  |  🛡️ **Grounding:** Local Campus Dictionary  |  🔒 **100% Offline & Private***\n"
+                    )
+
                     return TranslationBreakdown(
                         source_text=text,
-                        direct_meaning=parsed.get("direct_meaning", "").strip(),
-                        vibe_and_tone=parsed.get("vibe_and_tone", "").strip(),
-                        on_campus_context=parsed.get("on_campus_context", "").strip(),
-                        cultural_nuances=parsed.get("cultural_nuances", []),
+                        direct_meaning=direct_meaning,
+                        vibe_and_tone=vibe_and_tone,
+                        on_campus_context=on_campus_context,
+                        cultural_nuances=cultural_nuances,
                         matched_terms=term_names,
-                        model_used=f"ollama:{resolved_model}",
+                        model_used=model_label,
                         is_offline_grounded=True,
-                        roommate_reply_suggestion=parsed.get("roommate_reply_suggestion"),
+                        roommate_reply_suggestion=reply_suggestion,
+                        formatted_markdown=formatted_markdown,
                     )
             except Exception as e:
                 logger.warning("Ollama chat generation failed: %s. Falling back to local offline heuristic.", e)
@@ -260,6 +290,28 @@ class OllamaService:
         else:
             suggested_reply = "Scene sorted hai guru, let's meet at Oasis after the evening soft skills class!"
 
+        # Construct clean Markdown formatting without HTML div tags
+        terms_badges = " ".join([f"`{name}`" for name in matched_names]) if matched_names else "`Conversational Campus Lingo`"
+        nuances_bullets = "\n".join([f"- {item}" for item in cultural_nuances])
+        
+        formatted_markdown = (
+            f"### 📘 Direct Meaning / Translation\n"
+            f"> {direct_meaning}\n\n"
+            f"### 🎭 The Vibe & Tone\n"
+            f"**{vibe_and_tone}**\n\n"
+            f"### 🏛️ On-Campus Context (JC, GEC, or Hostel Life)\n"
+            f"{on_campus_context}\n\n"
+            f"---\n\n"
+            f"#### 💬 Suggested Roommate Response\n"
+            f"> *\"{suggested_reply}\"*\n\n"
+            f"#### 🌐 Cultural & Linguistic Nuances\n"
+            f"{nuances_bullets}\n\n"
+            f"#### 🏷️ Detected Campus Terms\n"
+            f"{terms_badges}\n\n"
+            f"---\n"
+            f"*⚙️ **Engine:** {model_info}  |  🛡️ **Grounding:** Local Campus Dictionary  |  🔒 **100% Offline & Private***\n"
+        )
+
         return TranslationBreakdown(
             source_text=text,
             direct_meaning=direct_meaning,
@@ -270,6 +322,7 @@ class OllamaService:
             model_used=model_info,
             is_offline_grounded=True,
             roommate_reply_suggestion=suggested_reply,
+            formatted_markdown=formatted_markdown,
         )
 
 

@@ -25,6 +25,39 @@ class TranslationBreakdown(BaseModel):
     roommate_reply_suggestion: Optional[str] = Field(
         None, description="A witty or helpful suggested reply for the trainee to send their roommate"
     )
+    formatted_markdown: Optional[str] = Field(
+        None, description="Clean Markdown representation of the breakdown without HTML div tags"
+    )
+
+    def to_markdown(self) -> str:
+        """Generates clean Markdown formatting without HTML div tags for native Streamlit rendering."""
+        if self.formatted_markdown:
+            return self.formatted_markdown
+
+        terms_badges = " ".join([f"`{t}`" for t in self.matched_terms]) if self.matched_terms else "`Conversational Campus Lingo`"
+        nuances_bullets = "\n".join([f"- {item}" for item in self.cultural_nuances]) if self.cultural_nuances else "- Authentic cross-state roommate communication"
+        
+        reply_block = ""
+        if self.roommate_reply_suggestion:
+            reply_block = f"#### 💬 Suggested Roommate Response\n> *\"{self.roommate_reply_suggestion}\"*\n\n"
+
+        md = (
+            f"### 📘 Direct Meaning / Translation\n"
+            f"> {self.direct_meaning}\n\n"
+            f"### 🎭 The Vibe & Tone\n"
+            f"**{self.vibe_and_tone}**\n\n"
+            f"### 🏛️ On-Campus Context (JC, GEC, or Hostel Life)\n"
+            f"{self.on_campus_context}\n\n"
+            f"---\n\n"
+            f"{reply_block}"
+            f"#### 🌐 Cultural & Linguistic Nuances\n"
+            f"{nuances_bullets}\n\n"
+            f"#### 🏷️ Detected Campus Terms\n"
+            f"{terms_badges}\n\n"
+            f"---\n"
+            f"*⚙️ **Engine:** {self.model_used}  |  🛡️ **Grounding:** Local Campus Dictionary  |  🔒 **100% Offline & Private***\n"
+        )
+        return md
 
 
 class DictionaryTerm(BaseModel):

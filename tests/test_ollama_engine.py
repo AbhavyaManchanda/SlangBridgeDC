@@ -24,3 +24,21 @@ def test_roommate_compromise_breakdown():
 
     assert "Swalpa Adjust Maadi" in breakdown.matched_terms
     assert "adjust" in breakdown.direct_meaning.lower() or "kannada" in str(breakdown.cultural_nuances).lower()
+
+
+def test_markdown_formatting_no_html_divs():
+    text = "Educator semma gaandu aayitaaru, 4th test case fail."
+    breakdown = ollama_service.translate(text)
+
+    md = breakdown.to_markdown()
+    assert md is not None
+    assert len(md) > 50
+
+    # Ensure clean Markdown is used without HTML div tags
+    assert "<div" not in md.lower()
+    assert "</div>" not in md.lower()
+
+    # Ensure required Markdown headers are present
+    assert "### 📘 Direct Meaning / Translation" in md
+    assert "### 🎭 The Vibe & Tone" in md
+    assert "### 🏛️ On-Campus Context (JC, GEC, or Hostel Life)" in md
