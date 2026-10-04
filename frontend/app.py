@@ -293,10 +293,16 @@ with tabs[1]:
 
             st.success("✅ Voice Note Processed Successfully!")
             st.markdown(
-                f"### 🎙️ Transcribed Audio Text\n\n"
-                f"> **\"{audio_result.get('transcribed_text')}\"**\n\n"
-                f"*⏱️ Duration: **{audio_result.get('duration_seconds')}s**  |  ⚙️ Engine: **{audio_result.get('engine_used')}**  |  📁 File: **{audio_result.get('file_name')}***\n\n"
-                f"---\n"
+                f"""
+                <div style="background: #0f172a; border: 1px solid #334155; padding: 14px 18px; border-radius: 10px; margin-bottom: 16px;">
+                    <div style="color: #94a3b8; font-size: 0.85rem; font-weight: 700; text-transform: uppercase;">🎙️ Transcribed Audio Text:</div>
+                    <div style="color: #f8fafc; font-size: 1.25rem; font-weight: 600; margin: 6px 0;">"{audio_result.get('transcribed_text')}"</div>
+                    <div style="color: #64748b; font-size: 0.8rem;">
+                        Duration: <b>{audio_result.get('duration_seconds')}s</b> | Engine: <b>{audio_result.get('engine_used')}</b> | File: <b>{audio_result.get('file_name')}</b>
+                    </div>
+                </div>
+                """,
+                unsafe_allow_html=True,
             )
 
             raw_breakdown = audio_result.get("breakdown")
